@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle Page</title>
+    <style>
+        body {
+            background-image: url('pathak.jpg'); /* Replace with your background image path */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solve the Riddle to Watch the Video</h1>
+        <p>"Uska pehla naam ek prasiddh Bharatiya abhinetri ka hai,
+aur doosra naam ka matlab hai 'raasta' ya 'path'.
+Batao woh kaun hai?"
+
+
+
+</p>
+        <input type="text" id="answer" placeholder="Your answer here">
+        <button onclick="checkAnswer()">Submit</button>
+    </div>
+
+    <script>
+        function checkAnswer() {
+            var answer = document.getElementById('answer').value.toLowerCase();
+            if (answer === 'anushka pathak') {
+                window.location.href = 'video.html';
+            } else {
+                alert('Incorrect answer. Try again!');
+            }
+        }
+    </script>
+</body>
+</html>
